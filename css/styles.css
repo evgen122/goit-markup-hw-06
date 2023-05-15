@@ -887,10 +887,13 @@ p {
 }
  */
 .form-input {
-  width: 360px;
+  /*  width: 360px; */
   display: flex;
   flex-direction: column;
   /* align-items: center; */
+
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 label {
@@ -903,8 +906,24 @@ modal-label {
 }
 
 .modal-form-area {
+  position: relative;
   margin-bottom: 8px;
 }
 textarea {
   resize: none;
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+}
+
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
 }
