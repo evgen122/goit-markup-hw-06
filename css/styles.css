@@ -296,7 +296,7 @@ p {
   margin-top: 48px;
   margin-right: auto;
   margin-left: auto;
-  height: 56px;
+  /* height: 56px; */
   border: none;
   cursor: pointer;
 
@@ -637,8 +637,10 @@ p {
   align-items: center;
   justify-content: center;
 
-  width: 165px;
-  height: 40px;
+  /*  width: 165px;
+  height: 40px; */
+  padding-left: 24px;
+  padding-right: 24px;
 
   cursor: pointer;
 
@@ -841,6 +843,8 @@ p {
   left: calc(50%);
   transform: translate(-50%, -50%);
 
+  padding: 72px 24px 24px 24px;
+
   width: 408px;
   min-height: 576px;
 
@@ -888,11 +892,7 @@ p {
 }
 
 .modal-text {
-  display: flex;
-  margin-top: 72px;
-  margin-bottom: 16px;
-
-  justify-content: center;
+  text-align: center;
 
   font-weight: 500;
   font-size: 16px;
@@ -901,19 +901,15 @@ p {
 }
 
 .form-input {
-  /*   display: flex;
-  flex-direction: column; */
-
-  margin-left: 24px;
-  margin-right: 24px;
+  padding-top: 16px;
 }
 
 label {
 }
 
 .modal-label {
-  display: flex;
-  flex-direction: column;
+  display: block;
+
   margin-bottom: 4px;
 
   font-weight: 400;
@@ -954,7 +950,7 @@ label {
 .modal-form-comment {
   resize: none;
   display: block;
-
+  height: 120px;
   margin-bottom: 16px;
 
   padding-left: 16px;
@@ -989,7 +985,6 @@ label {
 }
 
 .modal-label-privacypolicy {
-  position: relative;
   display: flex;
   gap: 8px;
 
@@ -1001,6 +996,10 @@ label {
   margin-bottom: 24px;
 }
 
+.modal-checkbox {
+  position: relative;
+}
+
 .modal-form-checkbox {
   appearance: none;
   display: block;
@@ -1008,8 +1007,14 @@ label {
   height: 16px;
   border: 1px solid var(--color-form-check);
   border-radius: 2px;
+  outline: transparent;
 
-  /* cursor: pointer; */
+  cursor: pointer;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--color-wite);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8' fill='none'%3E%3Cpath fill='%23F4F4FD' d='M8.446.255A.917.917 0 0 1 10 .901a.928.928 0 0 1-.242.649L4.864 7.704a.92.92 0 0 1-1.019.229.92.92 0 0 1-.306-.204L.293 4.466a.925.925 0 0 1-.226-1.024.925.925 0 0 1 .87-.578.916.916 0 0 1 .656.294L4.162 5.74 8.422.282a.329.329 0 0 1 .025-.027h-.001Z'/%3E%3C/svg%3E");
 
   transition: background-color, border-color;
   transition-duration: 250ms;
@@ -1025,7 +1030,6 @@ label {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
-  /*  cursor: pointer; */
 
   color: var(--color-customers-icon);
 }
