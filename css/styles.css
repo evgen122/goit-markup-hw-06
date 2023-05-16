@@ -322,7 +322,9 @@ p {
 .main-btn:hover,
 .main-btn:focus,
 .button-submit:hover,
-.button-submit:focus {
+.button-submit:focus,
+.btn-footer:hover,
+.btn-footer:focus {
   background-color: var(--color-clic);
 }
 
@@ -638,11 +640,15 @@ p {
   width: 165px;
   height: 40px;
 
-  background: #4d5ae5;
+  background-color: #4d5ae5;
   border-radius: 4px;
   border-color: transparent;
 
   color: var(--color-wite);
+
+  transition: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-frame-icon {
