@@ -640,7 +640,9 @@ p {
   width: 165px;
   height: 40px;
 
-  background-color: #4d5ae5;
+  cursor: pointer;
+
+  background-color: var(--color-btn-hero);
   border-radius: 4px;
   border-color: transparent;
 
